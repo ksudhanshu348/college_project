@@ -5,16 +5,14 @@
   <link rel="stylesheet" type="text/css" href="sty.css">
   <link href="https://fonts.googleapis.com/css?family=Gayathri:700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:700i&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
 </head>
 <body>
   <c><h1>*Registration Form*</h1>
   </c>
   <br><br>
 </div>
+
 <script type="text/javascript" language="javascript">
   function EnableDisableTextBox(stud) {
         var passwd = document.getElementById("passwd");
@@ -31,72 +29,49 @@
         }
     }
 </script>
+
 <div class="register">
 <form action="lis.php" method="POST">
 <br>
-<center><h3> First Name:
-<input type="text" name="fname" placeholder="First Name">
-<br><br>
- Last Name:
-<input type="text" name="lname" placeholder="Last Name">
-<br><br>
-  Gender:
-<input type="radio" name="gender" value="male"> Male
-<input type="radio" name="gender" value="female"> Female
-<br><br>
-  College Name:
-<input type="text" name="cname" placeholder="College Name">
-<br><br>
-  Branch:
-<input type="text" name="bname" placeholder="Branch">
-<br><br>
-  Year:
-<input type="radio" name="year" value="1"> 1st 
-<input type="radio" name="year" value="2"> 2nd
-<input type="radio" name="year" value="3"> 3rd
-<input type="radio" name="year" value="4"> 4th
-<br><br>
-  Mobile No:
-<input type="number" name="mob" placeholder="Mobile No">
-<br><br>
-  E-mail:
-<input type="email" name="email" placeholder="Email">
-<br><br>
-  City:
-<input type="text" name="city" placeholder="City">
-</h3>
-</center>
+<pre>
+First Name: <input type="text" name="fname" placeholder="First Name">  Last Name: <input type="text" name="lname" placeholder="Last Name"><br>
+Gender: <input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female &nbsp<br>
+College Name: <input type="text" name="cname" placeholder="College Name"> &nbsp<br>
+Branch: <input type="text" name="bname" placeholder="Branch"> &nbsp <br>
+Year: <input type="radio" name="year" value="1"> 1st  <input type="radio" name="year" value="2"> 2nd <input type="radio" name="year" value="3"> 3rd <input type="radio" name="year" value="4"> 4th &nbsp<br>
+Mobile No: <input type="number" name="mob" placeholder="Mobile No">  E-mail: <input type="email" name="email" placeholder="Email"><br>
+City:<input type="text" name="city" placeholder="City">
+</pre>
 <br>
-<center>
-<h2><u>EVENTS:</u></h2>
-<br>
-<h2><u>WORKSHOP</u></h2>
+<pre>
+<h1><u>EVENTS:</u></h1><br>
+<u>WORKSHOP</u>
 <label><input type="checkbox" name="event"></label>
 Machine Learning
-<br><br>
+<br>
 <label><input type="checkbox" name="event"></label>
 Robotics
-<br><br>
+<br>
 <label><input type="checkbox" name="event"></label>
 Artificial Intelligence
-<br><br>
-<h2><u>GAMING WIZARD</u></h2>
+<br>
+<u>GAMING WIZARD</u>
 <label><input type="checkbox" name="game"></label>
 Counter Strike
-<br><br>
+<br>
 <label><input type="checkbox" name="game"></label>
 Pubg Pc Lite
-<br><br>
-<h4><label><input type="checkbox" name="accommodation"></label>
-For Accommodation</h4>
-<h4><label><input type="checkbox" name="tshirt" onclick="EnableDisableTextBo(this)"></label>
+<br>
+<label><input type="checkbox" name="accommodation"></label>
+For Accommodation
+<label><input type="checkbox" name="tshirt" onclick="EnableDisableTextBo(this)"></label>
 For T-shirt
 <select id="size" disabled="disabled">
     <option value="Size">Size</option>
     <option value="size">S</option>
     <option value="size">M</option>
     <option value="size">L</option>
-</select></h4>
+</select>
 <br>
 <h4><label><input type="checkbox" name="stud" id="stud" onclick="EnableDisableTextBox(this)"></label>
 Only For IIIT BHAGALPUR Students
@@ -106,7 +81,9 @@ Password:
 <label><input type="submit" name="stud" id="stud" value='check' onclick="match()"></label></h4>
 <h4> <input type="submit" value="Submit"></h4>
 </form>
+</pre>
 </center> 
 </div>
+
 </body>
 </html>
